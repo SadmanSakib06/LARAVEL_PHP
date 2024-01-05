@@ -1,0 +1,61 @@
+If cloning from git, then make .env file from copy the existing one
+Then install composer there cause no vendor file
+Composer install
+php artisan key:genarate
+Php artisan migrate
+Php artisan db:seed
+
+
+1. composer create-project laravel/laravel example-app
+2. php artisan serve
+3. then click the given link to check laravel project, http://127.0.0.1:8000/
+4. Inside (.env) file, configure the database part, database name & password
+5. php artisan make:controller BookController
+6. Write index function inside it, view (books.index)
+7. Crate books folder inside view, then inside books, create another file named index.blade.php
+8. php artisan make:model Book (model will be singular always & table will be plural)
+9. Inside controller write now,
+return view("books.index")->with('books',$books);
+10. Make a show method inside bookcontroler
+11. Then edit book.index file,
+12. Make show.index file
+13. Use named route
+14. Good practice is using larval layout, inside view folder make a file named layout.blade.php
+15. Rearrange index & show file with layout
+16. Use bootstrap 4 to change visuals of the layout
+17. Use bootstrap table
+18. Add icon file to the header
+19. Add nabber in the layout page
+20. Change in book controller, make it show as pages, 10 at one page
+21. Using bootstrap command again from documentation
+22. Inside provider, app service provider, write this inside boot method,  Paginator::useBootstrapFour();
+23. Make a books.create view file for new book addition, and a button in the index page
+24. Complete the form using bootstrap
+25. Write a route of post method inside web.php file
+26. Make a store method inside controller
+27. Include post method inside form
+28. For csrf token we have to use crd field inside form,... just add @csrf
+29. Add validation rules inside controller 
+30. For error msg edit inside form again
+31. Use old function to hold previous values
+32. Add edit function almost same as create, file and method make
+33. Update function making and and use post method inside route 
+34. Then update method will send us to view page same as when create new book
+35. Add deleted method
+36. Add a form in the row
+37. Search form inside index page
+38. Add search function there
+
+
+
+
+
+
+Creating database table
+
+1. php artisan make:migration create_books_table
+2. Php artisan migrate
+3. Php artisan db:seed
+4. php artisan make:factory BookFactory
+5. Php artisan migrate
+6. php artisan db:seed
