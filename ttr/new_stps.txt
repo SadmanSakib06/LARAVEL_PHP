@@ -122,8 +122,10 @@ public function boot(): void
 
 35. Add deleted method
 
-36. Add a form in the row
+36. Edit the file
+
 37. Search form inside index page
+
 38. Add search function there
 
 
