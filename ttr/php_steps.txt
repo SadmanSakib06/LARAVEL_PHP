@@ -1,10 +1,17 @@
-If cloning from git, then make .env file from copy the existing one
-Then install composer there cause no vendor file
-Composer install
-php artisan key:genarate
+
+--If cloning from git-- 
+then make ".env file from copy the existing one .env.example"
+Edit inside it, change database name to yours, 
+"DB_DATABASE = bookstore"
+"Username root"
+"Password 123456"
+Then install composer there cause no vendor file "Composer install"
+php artisan key:generate
 Php artisan migrate
 Php artisan db:seed
 
+
+--Creating from Scratch--
 
 1. composer create-project laravel/laravel example-app
 2. php artisan serve
@@ -51,7 +58,7 @@ return view("books.index")->with('books',$books);
 
 
 
-Creating database table
+--Creating database table--
 
 1. php artisan make:migration create_books_table
 2. Php artisan migrate
